@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048 - 经典数字益智游戏</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      min-height: 100vh;
+      color: white;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .logo {
+      width: 150px;
+      height: 150px;
+      background: linear-gradient(135deg, #edc22e 0%, #f2b179 100%);
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 30px;
+      box-shadow: 0 10px 40px rgba(237, 194, 46, 0.3);
+    }
+    .logo span {
+      font-size: 48px;
+      font-weight: bold;
+      color: #f9f6f2;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #edc22e, #f2b179);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tagline {
+      font-size: 20px;
+      color: #888;
+      margin-bottom: 40px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 40px 0;
+    }
+    .feature {
+      background: rgba(255,255,255,0.1);
+      padding: 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+    .feature-icon { font-size: 40px; margin-bottom: 15px; }
+    .feature h3 { margin-bottom: 10px; color: #edc22e; }
+    .feature p { color: #aaa; font-size: 14px; }
+    .download-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #edc22e 0%, #f2b179 100%);
+      color: #1a1a2e;
+      padding: 18px 50px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 30px 0;
+      box-shadow: 0 10px 30px rgba(237, 194, 46, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .download-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(237, 194, 46, 0.4);
+    }
+    .legal-links {
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .legal-links a {
+      color: #666;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 14px;
+    }
+    .legal-links a:hover { color: #edc22e; }
+    footer {
+      margin-top: 30px;
+      color: #444;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <span>2048</span>
+    </div>
+    
+    <h1>2048</h1>
+    <p class="tagline">经典数字益智游戏</p>
+    
+    <a href="https://github.com/vansagashero-droid/2048-legal/releases/download/v1.0/2048-release.apk" class="download-btn">
+      📱 下载 APK
+    </a>
+    
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🎮</div>
+        <h3>简单上手</h3>
+        <p>滑动合并相同数字，目标达到 2048</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📴</div>
+        <h3>离线游玩</h3>
+        <p>无需网络，随时随地畅玩</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💾</div>
+        <h3>自动保存</h3>
+        <p>游戏进度自动保存，不怕中断</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🏆</div>
+        <h3>最高分记录</h3>
+        <p>挑战自我，刷新最高分</p>
+      </div>
+    </div>
+    
+    <div class="legal-links">
+      <a href="license.html">开源许可证</a>
+      <a href="copyright.html">版权声明</a>
+      <a href="privacy-policy.html">隐私政策</a>
+    </div>
+    
+    <footer>
+      <p>基于 Gabriele Cirulli 的开源项目 | MIT License</p>
+      <p>© 2026 2048 Game</p>
+    </footer>
+  </div>
+</body>
+</html>
